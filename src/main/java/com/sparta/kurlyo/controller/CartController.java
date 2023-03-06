@@ -25,6 +25,7 @@ public class CartController {
         return cartService.addCart(goodsId, userDetails.getUsername());
     }
 
+
     @GetMapping("/cart")
     public CartWholeResponseDto getCart(@AuthenticationPrincipal UserDetailsImpl userDetails) {
         // userDetails가 존재하는지 확인
